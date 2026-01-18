@@ -1,1 +1,33 @@
-# ecn-voter-list
+## Scrape Data from the Election Commision Nepal Voter List
+> **Warning**  
+> This is for education purpose only, user is self responsile for any misuse
+
+
+Step 0. Install Python from here
+
+Step 1. Install all the dependencies (requirements.txt)
+```
+pip install requirements.txt
+```
+
+Step 2. Run the get_voter_data.py file as python get_voter_data.py ; Atleast select the Province and District and click download
+> **Note**  Will take a long time, may be hours depending what level you want to extract, the window also may seem to freeze but it is working so wait. DO NOT Let Your Machine go on Sleep Mode
+
+Step 3. Want to transform the data? Run `transform.py`
+
+Step 4. Want to create a single file to use with Excel? Run `create_single_file.py`
+
+> P.S: Opening the csv files in Excel might show random characters (this is due to the encoding issue, the csv files use 'utf-8' encoding). Please follow the following guides to properly open 'utf-8' encoded files with excel
+
+
+#### Single Command from Step 0 to Step 4 (you will still have to select which data you want to get)
+
+On Linux/Unix bases OS (eg; Mac or Linux)-> will ask for password if python is not there:
+```bash
+bash workflow.sh
+```
+
+On Windows:
+```
+batch workflow.sh
+```
