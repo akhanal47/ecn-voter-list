@@ -1,9 +1,10 @@
 ## Scrape Data from the Election Commision Nepal Voter List
-> **Warning**  
+
+> **⚠️ Warning ⚠️** 
 > This is for education purpose only, user is self responsile for any misuse
 
 
-Step 0. Install Python from here
+Step 0. Install Python from [here](https://www.python.org/)
 
 Step 1. Install all the dependencies (requirements.txt)
 ```
@@ -17,7 +18,7 @@ Step 3. Want to transform the data? Run `transform.py`
 
 Step 4. Want to create a single file to use with Excel? Run `create_single_file.py`
 
-> P.S: Opening the csv files in Excel might show random characters (this is due to the encoding issue, the csv files use 'utf-8' encoding). Please follow the following guides to properly open 'utf-8' encoded files with excel
+> P.S: Opening the csv files in Excel might show random characters (this is due to the encoding issue, the csv files use 'utf-8' encoding). Please follow [the guide](https://www.ias.edu/itg/content/how-import-csv-file-uses-utf-8-character-encoding-0) to properly open 'utf-8' encoded files with excel 
 
 
 #### Single Command from Step 0 to Step 4 (you will still have to select which data you want to get)
