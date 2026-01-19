@@ -1,6 +1,6 @@
 ## Scrape Data from the Election Commision Nepal Voter List
 
-> **⚠️ Warning ⚠️** 
+> **⚠️ Warning ⚠️** \
 > This is for education purpose only, user is self responsile for any misuse
 
 
@@ -11,7 +11,7 @@ Step 1. Install all the dependencies (requirements.txt)
 pip install requirements.txt
 ```
 
-Step 2. Run the get_voter_data.py file as python get_voter_data.py ; Atleast select the Province and District and click download
+Step 2. Run the `get_voter_data.py` file as `python get_voter_data.py` ; Atleast select the Province and District and click download
 > **Note**  Will take a long time, may be hours depending what level you want to extract, the window also may seem to freeze but it is working so wait. DO NOT Let Your Machine go on Sleep Mode
 
 Step 3. Want to transform the data? Run `transform.py`
@@ -32,3 +32,17 @@ On Windows:
 ```
 batch workflow.sh
 ```
+
+
+## Want to Get Data For All of Nepal?
+> **⚠️ Warning ⚠️** \
+This will take likely **take DAYS** to complete
+
+Run `get_voter_data_nepal.py`; if any municipality fails it will be added to a `failed.json` file
+
+> **⚠️ Warning ⚠️** \
+Based on how many failed on previous run; This might also **take DAYS** to complete
+
+To re-run for failed municipalities from previous run; Run `get_voter_data_nepal.py --failed.json`
+
+> Once complete (to your desired level); to transform and create a single file; use `Step 3` then `Step 4`
